@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            background-color:rgb(214, 216, 237);
+        body {
+            background-color: rgb(214, 216, 237);
         }
-        .body{
+
+        .body {
             background-color: rgb(235, 237, 241);
             height: auto;
             width: auto;
         }
-        .heading{
-            text-align: justify;
+
+        .heading {
+            text-align: center;
             color: rgb(26, 13, 13);
             height: 80px;
             width: 100%;
             margin-top: -20px;
             font-size: 30px;
             background-color: #fdbd5a;
+            margin-top: 10px;
 
-    
+
         }
-        h4{
+
+        h4 {
             font-size: 35px;
             margin-top: -1px;
         }
-        .para{
+
+        .para {
             font-size: 27px;
             margin-top: -5px;
         }
-        .why{
-            font-size: 33px;
+
+        .why {
+            margin: 0;
+            padding: 10px;
+            font-size: 24px;
+            text-align: center;
         }
+
         .footer {
             left: 0;
             bottom: 0;
@@ -43,84 +54,358 @@
             background-color: #fdbd5a;
             color: rgb(3, 2, 2);
             text-align: center;
-        }    
-        .content{
+        }
+
+        .content {
             background-color: #fdbd5a;
             height: 450px;
             width: 650px;
             margin-left: 750px;
             margin-top: -450px;
         }
-        .box1{
+
+        .box1 {
             color: white;
             background-color: #482580;
-            height: 40px;
+            height: 60px;
             width: 600px;
-            align-items: center;
             border-radius: 10px;
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+
         }
-/* ul li:before {
-  content: '✓';
-  
-} */
-.box2{
-    background-color: #edc852;
-}
 
-        
+        .box-1 {
+            color: rgb(11, 11, 11);
+            background-color: #b6aae3;
+            height: 60px;
+            width: 600px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+        }
+
+
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            padding: 10px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .strategy-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 300px;
+            width: 220px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .box-container-1 {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            padding: 10px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .strategy-box-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            width: 220px;
+            padding: 15px;
+            border-radius: 180px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* First box */
+        .strategy-box:nth-child(1) {
+            background: linear-gradient(to bottom, #fdbd5a, #ffd280);
+            border: 1px solid #e5a540;
+        }
+
+        /* Second box */
+        .strategy-box:nth-child(2) {
+            background: linear-gradient(to bottom, #482580, #5c3399);
+            border: 1px solid #371c66;
+            color: white;
+        }
+
+        /* Third box */
+        .strategy-box:nth-child(3) {
+            background: linear-gradient(to bottom, #A8D5E3, #c4e3ed);
+            border: 1px solid #8fc1d1;
+        }
+
+        /* First box */
+        .strategy-box-1:nth-child(1) {
+            background: linear-gradient(to bottom, #fdbd5a, #ffd280);
+            border: 1px solid #e5a540;
+        }
+
+        /* Second box */
+        .strategy-box-1:nth-child(2) {
+            background: linear-gradient(to bottom, #482580, #5c3399);
+            border: 1px solid #371c66;
+            color: white;
+        }
+
+        /* Third box */
+        .strategy-box-1:nth-child(3) {
+            background: linear-gradient(to bottom, #A8D5E3, #c4e3ed);
+            border: 1px solid #8fc1d1;
+        }
+
+
+        .strategy-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .strategy-box-1:hover {
+            transform: translateY(-5px);
+        }
+
+
+        .strategy-title {
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 17px;
+        }
+
+        .strategy-description {
+            font-size: 15px;
+            text-align: center;
+            line-height: 1.4;
+            margin-top: 15px;
+            padding: 0 10px;
+        }
+
+        .strategy-title-1 {
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 17px;
+            margin-top: -20px;
+        }
+
+     
+        .strategy-description-1 {
+            font-size: 15px;
+            text-align: center;
+            line-height: 1.4;
+            margin-top: 10px;
+            padding: 0 20px;
+            max-width: 180px;
+        }
+
+        .box2 {
+            background-color: #edc852;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-trust {
+            background-color: #e9f1f4;
+            border: 2px solid black;
+            height: 85px;
+            width: 450px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            padding-bottom: 20px;
+        }
+        .booknow{
+            background-color: rgb(227, 236, 235);
+            color: white;
+            height: 60px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        .content-box{
+            height: 529px;
+            width: 650px;
+            border: 0.5px solid black;
+            margin-left: 700px;
+            margin-top: -554px;
+            text-align: center;
+            font-size: 22px;
+            padding: 10px;
+
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+
+<body>
     <div class="body">
-    <div class="heading"><center><h3>Transform Your Vision into a Thriving Business with The Searchberg</h3></center></div>
-    <center><h4>Ready to take your <u style="color:rgb(48, 42, 235);"> business</u> to the <u style="color:rgb(48, 42, 235);">next level?</u></h4></center>
-    <center><p class="para">
-      Whether your're a <b>manufacturer thriving offline</b> and eager to build
-      an online empire, or a <b>visionary entrepreneur</b> looking to start your
-      dream business online. <b>The Searchberg </b>is your one-stop solution for
-      unmatched <b>digital marketing expertise.</b>
-    </p></center>
-    <center><div class="box1"> <h2 class="why">Why Choose The Searchberg?</div></center>
-    </h2>
+        <div class="heading">
+            <center>
+                <h3>Transform Your Vision into a Thriving Business with The Searchberg</h3>
+            </center>
+        </div>
+        <center>
+            <h4 style="margin-top: 20px;">Ready to take your <u style="color:rgb(48, 42, 235);"> business</u> to the <u
+                    style="color:rgb(48, 42, 235);">next level?</u></h4>
+        </center>
+        <center>
+            <p class="para">
+                Whether your're a <b>manufacturer thriving offline</b> and eager to build
+                an online empire, or a <b>visionary entrepreneur</b> looking to start your
+                dream business online. <b>The Searchberg </b>is your one-stop solution for
+                unmatched <b>digital marketing expertise.</b>
+            </p>
+        </center>
+        <br><br>
+        <center> <video width="900" controls>
+            <source src="Introduction.mp4" type="video/mp4">
+          </video> </center><BR><bR>
+                    
+        <center>
+            <div class="box1">
+                <h2 class="why">Why Choose The Searchberg?
+            </div>
+        </center>
+        </h2>
 
-    <div style="display: flex; flex-direction: column; 
-            justify-content: flex-end; 
-            border: 1px solid black; 
-            height: 350px; width : 250px; padding: 10px; border-radius: 5px;   box-shadow: 1px 1px 1px 1px; margin-left: 90px;">
-    <div style=" display: flex; flex-direction: row; justify-content: flex-start ;"><b>Proven Strategies:</b></div>
-    <div style=" padding: 10px; text-align: center; font-size: 20px;">Our tailored digital marketing strategies ensure your business achieves exceptional results—be it online growth or brand establishment.    </div>
-</div>
+        <div class="box-container">
+            <div class="strategy-box">
+                <img src="Proven-Strategies.jpeg"style="height: 40px; width: 30px;">
+                <h3 class="strategy-title">Proven Strategies:</h3>
+                <p class="strategy-description" style="font-size: 17px;">Our tailored digital marketing strategies ensure your business achieves
+                    exceptional results—be it online growth or brand establishment.</p>
+            </div>
 
-    
-    <ul style="font-size: 25px;">
-        <li><b>Proven Strategies:</b> Our tailored digital marketing strategies ensure your business achieves exceptional results—be it online growth or brand establishment.</li>
-        <li><b>Industry-Specific Expertise:</b> Specializing in fashion, e-commerce, and emerging markets, we understand the nuances of your industry.</li>
-        <li><b>End-to-End Solutions:</b> From website creation to social media dominance, we've got it all covered.</li>
+            <div class="strategy-box">
+                <img src="Industry-specific.jpeg"style="height: 40px; width: 30px;">
+                <h3 class="strategy-title">Industry-Specific Expertise:</h3>
+                <p class="strategy-description" style="font-size: 17px;">Specializing in fashion, e-commerce, and emerging markets, we understand
+                    the nuances of your industry.</p>
+            </div>
 
-    </ul>
-    <center><h3 style="font-size: 35px;">What We Do for You</h3></center>
-    
-    <ul style="font-size: 25px;">🚀 <u><b>Turn Offline Success into Online Sales:</b></u> We help established manufacturers take their successful offline presence into the world of e-commerce.       </ul>
+            <div class="strategy-box">
+                <img src="End-to-End.jpeg"style="height: 40px; width: 30px;">
+                <h3 class="strategy-title">End-to-End Solutions:</h3>
+                <p class="strategy-description" style="font-size: 17px;">From website creation to social media dominance, we've got it all
+                    covered.</p>
+            </div>
+        </div>
+        <center>
+            <div class="box-trust">
+                <h3 style="font-size: 35px;">Trusted by Industry Leaders</h3>
+            </div>
+        </center>
+        <center>
+            <p style="font-size: 25px;">“The Searchberg transformed my offline manufacturing business into an online
+                sensation. Within 3 months, I saw a 200% growth in revenue!” <u><b>– Rohit Jain, Entrepreneur</b></u>
+            </p>
+        </center>
 
-        <ul style="font-size: 25px;">🌐 <u><b>Launch Your Online Dream:</b> </u>Just starting out? We'll set up your digital storefront, craft impactful campaigns, and position your brand as a leader in your niche.</ul>
-        <ul style="font-size: 25px;">📈 <u><b>Drive Revenue & Leads:</b></u> With our CAPS strategy, we optimize your customer acquisition process, ensuring every penny spent brings exponential returns.</ul>
-<center><h3 style="font-size: 35px;">Trusted by Industry Leaders</h3></center>
-<center><p style="font-size: 25px;">“The Searchberg transformed my offline manufacturing business into an online sensation. Within 3 months, I saw a 200% growth in revenue!” <u><b>– Rohit Jain, Entrepreneur</b></u></p></center>
-<div class="box2"><center><h3 style="font-size: 35px;">Don’t Just Take a Step Forward, Leap Ahead!</h3></center></div>
-<center><p style="font-size: 25px;">Your competitors are already online. It’s time to make your mark and <b>dominate the digital space.</b></p></center>
-<center><h4 style="font-size: 30px;"> <b style="color: #ec4362;">Limited Slots Available!</b>
-    Click below to schedule your <b style="color: #5209f0;">FREE</b> business growth consultation and get an actionable roadmap to start your journey today!
-   </h4></center>
-   <br>
-   <div class="footer">
-    <h2 style="margin-top: -10px;">Still thinking? Just take an action </h2>
- 
-<p style="font-size: 16px; text-align:center; margin-top: -5px;">Let's take your business to the next level by achieving 3x growth!
-    </p>
 
-</div>
+        <!-- <center>
+            <h3 style="font-size: 35px;">What We Do for You</h3>
+        </center> -->
+        <center>
+            <div class="box-1">
+                <h2 class="why">What We Do for You
+            </div>
+        </center>
 
-  </body>
+
+        <!-- <ul style="font-size: 25px;">🚀 <u><b>Turn Offline Success into Online Sales:</b></u> We help established
+            manufacturers take their successful offline presence into the world of e-commerce. </ul>
+
+        <ul style="font-size: 25px;">🌐 <u><b>Launch Your Online Dream:</b> </u>Just starting out? We'll set up your
+            digital storefront, craft impactful campaigns, and position your brand as a leader in your niche.</ul>
+        <ul style="font-size: 25px;">📈 <u><b>Drive Revenue & Leads:</b></u> With our CAPS strategy, we optimize your
+            customer acquisition process, ensuring every penny spent brings exponential returns.</ul> -->
+
+        <div class="box-container-1">
+            <div class="strategy-box-1">
+                <h3 class="strategy-title-1">Turn Offline Success into Online Sales:</h3>
+                <p class="strategy-description-1">We help established
+                    manufacturers take their successful offline presence into the world of e-commerce.</p>
+            </div>
+
+            <div class="strategy-box-1">
+                <h3 class="strategy-title-1">Launch Your Online Dream:</h3>
+                <p class="strategy-description-1">Just starting out? We'll set up your
+                    digital storefront, craft impactful campaigns, and position your brand as a leader in your niche.
+                </p>
+            </div>
+
+            <div class="strategy-box-1">
+                <h3 class="strategy-title-1">Drive Revenue & Leads:</h3>
+                <p class="strategy-description-1">With our CAPS strategy, we optimize your
+                    customer acquisition process, ensuring every penny spent brings exponential returns.</p>
+            </div>
+        </div>
+
+
+
+        <!-- <center><div class="box-trust"><h3 style="font-size: 35px;">Trusted by Industry Leaders</h3> </div></center>
+        <center><p style="font-size: 25px;">“The Searchberg transformed my offline manufacturing business into an online
+                sensation. Within 3 months, I saw a 200% growth in revenue!” <u><b>– Rohit Jain, Entrepreneur</b></u>
+            </p>
+        </center> -->
+        <br>
+        <div class="box2">
+            <center>
+                <h3 style="font-size: 35px;">Don’t Just Take a Step Forward, Leap Ahead!</h3>
+            </center>
+        </div>
+        <center>
+            <p style="font-size: 25px;">Your competitors are already online. It’s time to make your mark and <b>dominate
+                    the digital space.</b></p>
+        </center>
+        <center>
+            <h4 style="font-size: 30px;"> <b style="color: #ec4362;">Limited Slots Available!</b>
+                Click below to schedule your <b style="color: #5209f0;">FREE</b> business growth consultation and get an
+                actionable roadmap to start your journey today!
+            </h4>
+        </center>
+        <center><div class="booknow"><a href="https://j00nllrystc.typeform.com/to/Hj0NOvVm?utm_source=xxxxx"><b style="font-size: 40px;">Book Now</b></a></div></center>
+        <br>
+        <br>
+        <center><h1>Meet Tanmay Desai; <b style="color: #0b20d6;">E-commerce Growth Consultant  & Founder of The Searchberg </b></h1></center>
+
+        <div class="intro-box">
+            <img src="profilepic.jpeg" style="height: 550px; width: 700px;">
+            <div class="content-box">
+                <h3>As a visionary entrepreneur at the helm of The Searchberg, a leading digital marketing agency, I have dedicated myself to helping e-commerce and fashion brands scale rapidly in today’s ever-evolving online landscape. With a background in consulting and a passion for digital innovation, I have developed a results-driven approach that combines deep market insights with cutting-edge strategies.</h3>
+                <h3>At The Searchberg, we specialize in building brands from the ground up. Whether it's crafting compelling social media strategies, developing user-friendly websites, creating engaging content, harnessing the power of UGC, setting up seamless e-commerce platforms, or executing data-driven performance marketing campaigns, we do it all—ensuring personalized, impactful, and measurable outcomes for every brand we partner with.</h3>
+            </div>
+        </div>
+        <div class="footer">
+            <h2 style="padding: 10px;">Still thinking? Just take an action </h2>
+
+            <p style="font-size: 16px; text-align:center; margin-top: -15px;">Let's take your business to the next level
+                by achieving 3x growth!
+            </p>
+
+        </div>
+
+</body>
 
 </html>
